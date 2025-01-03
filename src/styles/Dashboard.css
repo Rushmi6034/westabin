@@ -1,0 +1,138 @@
+/* Dashboard.css */
+.dashboard-container {
+    padding: 100px;
+  }
+
+  .dashboard-page {
+    position: relative;
+    background-image: url('../assests/demo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.dashboard-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Inherit the background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(15px); /* Apply blur only to the background */
+    z-index: -1; /* Ensure it stays behind content */
+}
+
+  
+  .navs-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+  }
+  
+  .navs-links {
+    display: flex;
+    gap: 15px;
+  }
+
+
+  .navs-container {
+    max-width: 1470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #16a34a;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navs-links {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.navs-links a {
+    text-decoration: none;
+    /* color: #4b5563; */
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+    gap: 50px;
+}
+
+.navs-links a:hover {
+    color: #16a34a;
+    transform: scale(1.1);
+}
+
+  
+  /* dashboard.css */
+.dustbin-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensures 3 cards in a row */
+  gap: 30px; /* Adjust the gap for better spacing */
+  margin-top: 20px;
+  padding: 20px; /* Add padding for better overall appearance */
+}
+
+/* DustbinCard.css */
+.dustbin-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4; /* Slightly off-white for better contrast */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.dustbin-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.dustbin-info {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.info-item {
+  margin-bottom: 10px;
+}
+
+.dustbin-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Center the header */
+.dashboard-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.dustbin-image {
+  width: 80px; /* Adjust the size as needed */
+  height: 80px;
+  object-fit: contain; /* Ensure the image fits well */
+  margin-bottom: 15px; /* Add spacing between the image and text */
+}
+
+
+  
