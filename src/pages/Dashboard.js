@@ -48,8 +48,8 @@ const Dashboard = () => {
         <div className="navs-container">
           <div className="logs">🗑️ WestaBin</div>
           <div className="navs-links">
-            <Link to="/dashboard" className="active">Dashboard</Link>
-            <Link to="#">About Us</Link>
+            <Link to="/" >Home</Link>
+            <Link to="/aboutus">About Us</Link>
             <Link to="#">Contact</Link>
             <div className="butto">
             <Link to="/login">Logout</Link>

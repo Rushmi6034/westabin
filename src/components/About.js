@@ -11,7 +11,7 @@ const About = () => {
     <nav>
             <div className="nav-container">
               <div className="log">
-                🗑️ WastaBin
+                🗑️ WestaBin
               </div>
               <div className="nav-links">
                 <Link to="/" className="active">Home</Link>
@@ -48,17 +48,17 @@ const About = () => {
         <div className="vision">
           <h2>Our Vision</h2>
           <p>
-            Welcome to <strong>WastaBin</strong>, a cutting-edge smart dustbin
+            Welcome to <strong>WestaBin</strong>, a cutting-edge smart dustbin
             designed to transform waste disposal and management into an efficient,
             hygienic, and eco-friendly process.
           </p>
           <p>
-            At WastaBin, we believe in creating a cleaner, smarter, and more
+            At WestaBin, we believe in creating a cleaner, smarter, and more
             sustainable future. Our goal is to leverage technology to reduce
             waste-related pollution, promote recycling, and simplify the way people
             interact with waste disposal systems.
           </p>
-          <ul className="features-list">
+          <ul >
             <li>Detect waste levels in real-time.</li>
             <li>Provide touchless lid operation for better hygiene.</li>
             <li>Assist with waste segregation (biodegradable vs. non-biodegradable).</li>
