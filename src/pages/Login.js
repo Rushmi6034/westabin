@@ -17,7 +17,7 @@ const Login = () => {
       // Firebase login logic
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       console.log("User logged in:", userCredential.user);
-      alert("Login successful!");
+      // alert("Login successful!");
 
       // Navigate to the dashboard or home page
       navigate("/dashboard");

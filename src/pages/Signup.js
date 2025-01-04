@@ -26,11 +26,11 @@ const Signup = () => {
       return;
     }
 
-    // const passwordRegex = /^(?=.[A-Z])(?=.[a-z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%?&]{8,}$/;
-    // if (!passwordRegex.test(password)) {
-    //   alert("Password must be at least 8 characters long, contain one uppercase letter, one number, and one special character.");
-    //   return;
-    // }
+    const passwordRegex = /^(?=.[A-Z])(?=.[a-z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%?&]{8,}$/;
+    if (!passwordRegex.test(password)) {
+      alert("Password must be at least 8 characters long, contain one uppercase letter, one number, and one special character.");
+      return;
+    }
 
     if (password !== confirmPassword) {
       alert("Passwords do not match.");

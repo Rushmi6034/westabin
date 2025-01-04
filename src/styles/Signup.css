@@ -32,7 +32,7 @@ body {
   .logo {
               text-align: center;
               margin-bottom: 2rem;
-              color: #16a34a;
+              color: #05671f;
   /* color: #023336; */
               font-size: 1.5rem;
               font-weight: bold;
@@ -114,7 +114,8 @@ background: none;
     font-size: 1rem;
     color: black;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-top: 5px;
+    margin-bottom: 3px;
   }
   
   .signup-container h1 {
@@ -162,7 +163,7 @@ background: none;
   .btn {
     width: 100%; /* Full width for balance */
     padding: 10px; /* Slightly larger padding for a comfortable look */
-    background-color: #16a34a; /* Bold deep blue */
+    background-color: #05671f; /* Bold deep blue */
     color: #FEFCFB; /* Bright white text */
     border: none; /* No border for a clean design */
     border-radius: 8px; /* Rounded corners for a modern touch */
@@ -209,7 +210,7 @@ background: none;
     
     font-size: 0.875rem;
 
-    color: #16a34a;
+    color: #05671f;
     font-weight: bold;
 
     
