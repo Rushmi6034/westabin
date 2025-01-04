@@ -84,7 +84,7 @@
   grid-template-columns: repeat(3, 1fr); /* Ensures 3 cards in a row */
   gap: 30px; /* Adjust the gap for better spacing */
   margin-top: 20px;
-  padding: 20px; /* Add padding for better overall appearance */
+  padding: 30px; /* Add padding for better overall appearance */
 }
 
 /* DustbinCard.css */

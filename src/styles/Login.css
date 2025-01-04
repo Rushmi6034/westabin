@@ -9,13 +9,13 @@ body {
   }
 
   .login-page{
-    background-image: url('../assests/demo.jpg');
+    /* background-image: url('../assests/demo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     /* filter: blur(3px); */
-
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(61, 160, 68, 0.8));
 
   }
   
@@ -35,30 +35,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #eeeeee4b;
+    /* background-color: #eeeeee4b; */
     border-radius: 3px;
     letter-spacing: 1px;
     transition: all 0.2s linear;
     cursor: pointer;
     border: none;
-    background: #fff;
-    padding: 8px 12px;
-    font-size: 0.9rem;
-    /* New positioning properties */
+background: none;
+    padding: 10px 14px;
+   
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 30px;
+    left: 30px;
     z-index: 1000;
-  }
-  
-  .back svg {
-    margin-right: 10px;
-  }
-  
-  .back:hover {
-    color: rgb(56, 154, 56);
-    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
-  }
+    font-weight: bold;
+}
+
+.back > svg {
+    /* margin-right: 5px; */
+    font-size: 25px;
+    transition: all 0.4s ease-in;
+    color: black;
+    font-weight: bold;
+}
+
+.back:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+    font-weight: bold;
+}
 
   .img-container {
     flex: 1;
@@ -105,7 +110,7 @@ body {
   height: 100vh;
   gap: 20px;
   /* background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(61, 160, 68, 0.8)); */
-  padding: 20px;
+    padding: 20px;
 }
 
 .img-container {
@@ -128,6 +133,7 @@ body {
   max-width: 50%;
   display: flex;
   justify-content: center;
+  /* background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(61, 160, 68, 0.8)); */
   align-items: center;
 }
 
@@ -165,6 +171,7 @@ body {
   .start {
     margin-bottom: 5px;
     color: black;
+    font-weight: bold;
   }
   
   
@@ -242,20 +249,21 @@ body {
   /* Final Sign-up Link */
   .final {
     text-align: center;
+    margin-top: 20px;
     font-size: 1rem;
     color: black;
-    /* font-weight: bold; */
+    font-weight: bold;
   }
   
   .final a {
     /* font-weight: 800; */
-    color: white;
+    color: #16a34a;
     font-weight: bold;
     /* margin-left: 20px; */
   }
   
   .final a:hover {
-    color: #16a34a;
+    color: white;
   }
   
   /* Media Queries for Responsiveness */
@@ -329,3 +337,8 @@ max-width: 400px;
 }
 
 /* Other styles remain unchanged... */
+
+
+
+
+

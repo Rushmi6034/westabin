@@ -79,7 +79,7 @@ const Home = () => {
               </div>
               <div className="feature-card">
                 <div className="feature-icon">
-                  <img src="./assests/place.gif" width="50px" height="50px" alt="Location tracking" />
+                  <img src="./assests/place1.gif" width="50px" height="50px" alt="Location tracking" />
                 </div>
                 <h3>Location Tracking</h3>
                 <p>GPS-enabled tracking for all smart bins</p>

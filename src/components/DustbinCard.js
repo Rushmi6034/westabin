@@ -295,115 +295,232 @@
 
 //chatgpt
 //excel format
-import React from 'react';
+// import React from 'react';
 
-const DustbinCard = ({ name, level, location, load }) => {
+// const DustbinCard = ({ name, level, location, load }) => {
 
-  const dustbinImage = "./assests/db.jpg";
-
-
-  const handleCardClick = () => {
-    // Create an HTML table from the data
-    const htmlContent = `
-  <html>
-    <head>
-          <title>Dustbin Data</title>
-      <style>
-        body {
-          font-family: Arial, sans-serif;
-          margin: 20px;
-        }
+//   const dustbinImage = "./assests/db.jpg";
 
 
-
-.nav-container {
-    max-width: 1470px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #16a34a;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+//   const handleCardClick = () => {
+//     // Create an HTML table from the data
+//     const htmlContent = `
+//   <html>
+//     <head>
+//           <title>Dustbin Data</title>
+//       <style>
+//         body {
+//           font-family: Arial, sans-serif;
+//           margin: 20px;
+//         }
 
 
-        table {
-        margin-top:120px;
-          width: 100%;
-          border-collapse: collapse;
-          margin: 20px 0;
-          font-size: 16px;
-          text-align: left;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        th, td {
-          padding: 10px;
-          border: 1px solid #ccc;
-        }
-        th {
-          background-color: #16a34a;
-          color: white;
-          text-align: center;
-        }
-        tr:nth-child(even) {
-          background-color: #f9f9f9;
-        }
-        tr:hover {
-          background-color: #f1f1f1;
-        }
-        h1 {
-          text-align: center;
-          color: #333;
-        }
-      </style>
-    </head>
-   <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                🗑️ Westabin
-            </div>
+
+// .nav-container {
+//     max-width: 1470px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// .logo {
+//     display: flex;
+//     align-items: center;
+//     gap: 10px;
+//     color: #16a34a;
+//     font-size: 1.5rem;
+//     font-weight: bold;
+// }
+
+
+//         table {
+//         margin-top:120px;
+//           width: 100%;
+//           border-collapse: collapse;
+//           margin: 20px 0;
+//           font-size: 16px;
+//           text-align: left;
+//           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+//         }
+//         th, td {
+//           padding: 10px;
+//           border: 1px solid #ccc;
+//         }
+//         th {
+//           background-color: #16a34a;
+//           color: white;
+//           text-align: center;
+//         }
+//         tr:nth-child(even) {
+//           background-color: #f9f9f9;
+//         }
+//         tr:hover {
+//           background-color: #f1f1f1;
+//         }
+//         h1 {
+//           text-align: center;
+//           color: #333;
+//         }
+//       </style>
+//     </head>
+//    <body>
+//     <nav>
+//         <div class="nav-container">
+//             <div class="logo">
+//                 🗑️ Westabin
+//             </div>
             
-        </div>
-    </nav>
+//         </div>
+//     </nav>
 
-      <h1>${name} Data</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Level</th>
-            <th>Location</th>
-            <th>Load</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>${name}</td>
-            <td>${level}</td>
-            <td>${location}</td>
-            <td>${load}</td>
-          </tr>
+//       <h1>${name} Data</h1>
+//       <table>
+//         <thead>
+//           <tr>
+//             <th>Name</th>
+//             <th>Level</th>
+//            <!-- <th>Location</th>
+//             <th>Load</th>-->
+//           </tr>
+//         </thead>
+//         <tbody>
+//           <tr>
+//             <td>${name}</td>
+//             <td>${level}</td>
+//            <!-- <td>${location}</td>
+//             <td>${load}</td>-->
+//           </tr>
 
          
-        </tbody>
-      </table>
-    </body>
-  </html>
-`;
+//         </tbody>
+//       </table>
+//     </body>
+//   </html>
+// `;
 
 
     
    
 
 
-    // Open a new tab and write the content
+//     // Open a new tab and write the content
+//     const newTab = window.open();
+//     newTab.document.open();
+//     newTab.document.write(htmlContent);
+//     newTab.document.close();
+//   };
+
+//   return (
+//     <div className="dustbin-card" onClick={handleCardClick}>
+//       <img src={dustbinImage} alt="Dustbin" className="dustbin-image" />
+//       <h3>{name}</h3>
+//       <p>Level: {level}</p>
+//       {/* <p>Location: {location}</p>
+//       <p>Load: {load}</p> */}
+//     </div>
+//   );
+// };
+
+// export default DustbinCard;
+
+
+
+
+
+
+
+
+
+
+
+import React from 'react';
+import zeroLevelImage from '../assests/zero.png';
+import lowLevelImage from '../assests/low1.png'; // Replace with the actual path to your image
+import highLevelImage from '../assests/high1.png'; // Replace with the actual path to your image
+import mediumLevelImage from '../assests/medium1.png'; // Optional: for intermediate levels
+
+const DustbinCard = ({ name, level,  }) => {
+  // Parse the level percentage
+  const levelValue = parseInt(level.replace('%', ''), 10);
+
+  // Determine the dustbin image based on the level
+  let dustbinImage;
+  if (levelValue == 0) {
+    dustbinImage = zeroLevelImage;
+  }
+  else if (levelValue <= 20) {
+    dustbinImage = lowLevelImage;
+  } else if (levelValue <= 60) {
+    dustbinImage = mediumLevelImage;
+  } else {
+    dustbinImage = highLevelImage; // Optional: Add an intermediate level image
+  }
+
+  const handleCardClick = () => {
+    const htmlContent = `
+      <html>
+        <head>
+          <title>Dustbin Data</title>
+          <style>
+            body {
+              font-family: Arial, sans-serif;
+              margin: 20px;
+            }
+            table {
+              margin-top: 120px;
+              width: 100%;
+              border-collapse: collapse;
+              font-size: 16px;
+              text-align: left;
+            }
+            th, td {
+              padding: 10px;
+              border: 1px solid #ccc;
+            }
+            th {
+              background-color: #16a34a;
+              color: white;
+              text-align: center;
+            }
+            tr:nth-child(even) {
+              background-color: #f9f9f9;
+            }
+            tr:hover {
+              background-color: #f1f1f1;
+            }
+            h1 {
+              text-align: center;
+            }
+
+            .dustbin-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Optional: Ensures the aspect ratio is maintained */
+}
+          </style>
+        </head>
+        <body>
+          <h1>${name} Data</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Level</th>
+               
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>${name}</td>
+                <td>${level}</td>
+                
+              </tr>
+            </tbody>
+          </table>
+        </body>
+      </html>
+    `;
+
     const newTab = window.open();
     newTab.document.open();
     newTab.document.write(htmlContent);
@@ -412,16 +529,18 @@ const DustbinCard = ({ name, level, location, load }) => {
 
   return (
     <div className="dustbin-card" onClick={handleCardClick}>
-      <img src={dustbinImage} alt="Dustbin" className="dustbin-image" />
+      <img src={dustbinImage} alt="Dustbin"  className="dustbin-image" />
       <h3>{name}</h3>
       <p>Level: {level}</p>
-      <p>Location: {location}</p>
-      <p>Load: {load}</p>
+      {/* <p>Location: {location}</p>
+      <p>Load: {load}</p> */}
+      
     </div>
   );
 };
 
 export default DustbinCard;
+
 
 
 

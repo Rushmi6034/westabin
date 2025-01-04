@@ -23,8 +23,8 @@ const Dashboard = () => {
           id: key,
           name: key,  // The name of the bin is its key (e.g., BIN1, BIN2)
           level: data[key] !== undefined ? `${data[key]}%` : '0%',  // Show 0% if level data is missing
-          location: data[key]?.location || 'None',
-            load: data[key]?.load !== undefined ? `${data[key]?.load}kg` : '0kg',
+          // location: data[key]?.location || 'None',
+          //   load: data[key]?.load !== undefined ? `${data[key]?.load}kg` : '0kg',
         }));
 
         setDustbins(transformedData);  // Set the transformed data to state
@@ -66,8 +66,8 @@ const Dashboard = () => {
             key={dustbin.id} 
             name={dustbin.name} 
             level={dustbin.level} 
-            location={dustbin.location} 
-            load={dustbin.load} 
+            // location={dustbin.location} 
+            // load={dustbin.load} 
           />
         ))}
       </div>
