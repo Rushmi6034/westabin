@@ -1,8 +1,6 @@
 // import React, { useEffect, useRef } from 'react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-// import FeatureCard from '../components/FeatureCard';
 import '../styles/Home.css';
 
 const Home = () => {
@@ -44,7 +42,7 @@ const Home = () => {
 <nav>
             <div className="nav-container">
               <div className="log">
-                🗑️ WestaBin
+                🗑️ WastaBin
               </div>
               <div className="nav-links">
                 <Link to="/" className="active">Home</Link>

@@ -61,7 +61,7 @@ const Signup = () => {
       </button>
 <div className="mains-container">
       <div className="signup-container">
-        <div className="logo">🗑️ WestaBin</div>
+        <div className="logo">🗑️ WastaBin</div>
         <h2>Sign Up</h2>
         <div className="form">
           <form onSubmit={handleSubmit}>
