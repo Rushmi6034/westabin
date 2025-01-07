@@ -17,7 +17,7 @@ const Login = () => {
       // Firebase login logic
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       console.log("User logged in:", userCredential.user);
-      alert("Login successful!");
+      // alert("Login successful!");
 
       // Navigate to the dashboard or home page
       navigate("/dashboard");
@@ -41,7 +41,7 @@ const Login = () => {
 
   <div className="login-container">
     <div className="login-content">
-      <div className="logos">🗑️ WestaBin</div>
+      <div className="logos">🗑️ WastaBin</div>
       <h2>Welcome Back</h2>
 
       <form onSubmit={handleSubmit}>

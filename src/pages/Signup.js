@@ -26,11 +26,11 @@ const Signup = () => {
       return;
     }
 
-    // const passwordRegex = /^(?=.[A-Z])(?=.[a-z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%?&]{8,}$/;
-    // if (!passwordRegex.test(password)) {
-    //   alert("Password must be at least 8 characters long, contain one uppercase letter, one number, and one special character.");
-    //   return;
-    // }
+    const passwordRegex = /^(?=.[A-Z])(?=.[a-z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%?&]{8,}$/;
+    if (!passwordRegex.test(password)) {
+      alert("Password must be at least 8 characters long, contain one uppercase letter, one number, and one special character.");
+      return;
+    }
 
     if (password !== confirmPassword) {
       alert("Passwords do not match.");
@@ -61,7 +61,7 @@ const Signup = () => {
       </button>
 <div className="mains-container">
       <div className="signup-container">
-        <div className="logo">🗑️ WestaBin</div>
+        <div className="logo">🗑️ WastaBin</div>
         <h2>Sign Up</h2>
         <div className="form">
           <form onSubmit={handleSubmit}>

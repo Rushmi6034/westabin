@@ -44,7 +44,7 @@ const Home = () => {
 <nav>
             <div className="nav-container">
               <div className="log">
-                🗑️ WestaBin
+                🗑️ WastaBin
               </div>
               <div className="nav-links">
                 <Link to="/" className="active">Home</Link>
@@ -59,7 +59,7 @@ const Home = () => {
       <section className="hero">
           <div className="hero-content">
             <h1>Welcome to WastaBin</h1>
-            <p className="subtitle">Revolutionizing Waste Management with Smart Technology</p>
+            {/* <p className="subtitle">Revolutionizing Waste Management with Smart Technology</p> */}
 
             {/* Features */}
             <div className="features">
