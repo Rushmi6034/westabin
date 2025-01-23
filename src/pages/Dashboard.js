@@ -46,7 +46,9 @@ const Dashboard = () => {
     <div className="class">
       <nav>
         <div className="navs-container">
-          <div className="logs">🗑️ WastaBin</div>
+          <div className="logs">
+          <img src='./assests/log.png'height={35} width={30}/>
+             WastaBin</div>
           <div className="navs-links">
             <Link to="/" >Home</Link>
             <Link to="/aboutus-dashboard">About Us</Link>

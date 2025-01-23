@@ -7,7 +7,7 @@
   
   h1{
       margin-top:25px;
-      color:#16a34a
+      color:#391b49;
 
     }
   table {
@@ -22,7 +22,7 @@
     border: 1px solid #ccc;
   }
   th {
-    background-color: #16a34a;
+    background-color: #391b49;
     color: white;
     text-align: center;
   }

@@ -26,13 +26,13 @@ body {
     align-items: center; */
     height: 100vh;
     gap: 20px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(61, 160, 68, 0.8));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), #9670c7);
             padding: 20px;
   }
   .logo {
               text-align: center;
               margin-bottom: 2rem;
-              color: #05671f;
+              color: #722c98;
   /* color: #023336; */
               font-size: 1.5rem;
               font-weight: bold;
@@ -136,7 +136,7 @@ background: none;
     width: 100%;
     padding: 12px;
     margin: 12px 0;
-    border: 1.5px solid #16a34a;
+    border: 1.5px solid #391b49;
     border-radius: 6px;
     font-size: 1rem;
     font-family: 'Arial', sans-serif;
@@ -146,8 +146,8 @@ background: none;
   
   input:focus {
     outline: none;
-    border: 2px solid #16a34a;
-    box-shadow: 0 0 5px rgba(22, 163, 74, 0.3);
+    border: 2px solid #391b49;
+    box-shadow: 0 0 5px #8b55a9;
   }
   
   /* Override any browser-specific focus styles */
@@ -155,7 +155,7 @@ background: none;
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
-    border: 2px solid #16a34a;
+    border: 2px solid #391b49;
     outline: none;
   }
   
@@ -163,7 +163,7 @@ background: none;
   .btn {
     width: 100%; /* Full width for balance */
     padding: 10px; /* Slightly larger padding for a comfortable look */
-    background-color: #05671f; /* Bold deep blue */
+    background-color: #391b49; /* Bold deep blue */
     color: #FEFCFB; /* Bright white text */
     border: none; /* No border for a clean design */
     border-radius: 8px; /* Rounded corners for a modern touch */
@@ -176,20 +176,20 @@ background: none;
   }
   
   .btn:hover {
-    background-color: #40a766; /* Teal color from the palette */
+    background-color: #794d91; /* Teal color from the palette */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for a pop effect */
     transform: scale(1.02); /* Subtle zoom effect on hover */
   }
   
   .btn:active {
-    background-color: rgb(56, 154, 56); /* Darker blue for pressed state */
+    background-color: #391b49; /* Darker blue for pressed state */
     box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3); /* Inner shadow for depth */
   }
   
   
   .signup-container footer {
     font-family: 'Roboto', sans-serif; /* Simple and clean font for footer */
-    color: rgb(56, 154, 56); /* Footer text color */
+    color: #391b49; /* Footer text color */
     font-size: 0.9rem;
     margin-top: 20px;
     text-align: center; /* Center-align footer */
@@ -210,7 +210,7 @@ background: none;
     
     font-size: 0.875rem;
 
-    color: #05671f;
+    color: #391b49;
     font-weight: bold;
 
     

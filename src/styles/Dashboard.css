@@ -7,7 +7,7 @@ body {
 
 .dashboard-page{
   /* background: linear-gradient(to right,  rgba(61, 160, 68, 0.8),#84d484); */
-  background-image: url('../assests/re.jpeg');
+  background-image: url('../assests/bp.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,7 +54,11 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  /* background-color: rgb(72, 70, 70); */
+  /* background-color: whitesmoke; */
+  background-color: rgba(0, 0, 0, 0.2);
+
 }
 
 .navs-container {
@@ -68,7 +72,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #16a34a;
+  color: white;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -87,7 +91,7 @@ nav {
 }
 
 .navs-links a:hover {
-  color: #16a34a;
+  color: #c29ce5;
   transform: scale(1.1);
 }
 
@@ -157,7 +161,7 @@ nav {
 
 
 .butto {
-  background-color: #16a34a;
+  background-color: #795690;
   border-radius: 5px;
   padding: 5px 10px;
 }

@@ -42,7 +42,9 @@ const Home = () => {
 <nav>
             <div className="nav-container">
               <div className="log">
-                🗑️ WastaBin
+              <img src='./assests/log.png'height={35} width={30}/> 
+
+                WastaBin
               </div>
               <div className="nav-links">
                 <Link to="/" className="active">Home</Link>

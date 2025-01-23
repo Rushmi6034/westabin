@@ -6,11 +6,13 @@
 
 .home-page {
    
-  background-image: url('../assests/re.jpeg');
+  background-image: url('../assests/bp.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  /* height: 1200px; */
+  
  
 }
 
@@ -21,6 +23,7 @@ nav {
     width: 100%;
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.1);
+    
 }
 
 .nav-container {
@@ -34,7 +37,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #16a34a;
+    color: white;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -48,12 +51,12 @@ nav {
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-weight: 500;
+    font-weight: 550;
     transition: color 0.3s, transform 0.3s;
 }
 
 .nav-links a:hover {
-    color: #16a34a;
+    color: #9670c7;
     transform: scale(1.1);
     font-weight: bold;
 }
@@ -85,7 +88,7 @@ nav {
 .butto {
     display: inline-block;
     padding: 5px;
-    background: #05671f;
+    background: #795690;
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -159,8 +162,8 @@ h1 {
 
 .btns {
     display: inline-block;
-    padding: 15px 20px;
-    background-color: #05671f;
+    padding: 12px 20px;
+    background-color: #391b49;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -169,7 +172,7 @@ h1 {
 
 .btns:hover {
     background-color: white;
-    color: #16a34a;
+    color: #795690;
     font-weight: bold;
 }
 

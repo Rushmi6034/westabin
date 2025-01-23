@@ -11,7 +11,9 @@ const About = () => {
     <nav>
             <div className="nav-container">
               <div className="lg">
-                🗑️ WastaBin
+              <img src='./assests/log.png'height={35} width={30}/> 
+
+                WastaBin
               </div>
               <div className="navi-links">
                 <Link to="/dashboard" className="active">Home</Link>

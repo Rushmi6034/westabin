@@ -41,7 +41,9 @@ const Login = () => {
 
   <div className="login-container">
     <div className="login-content">
-      <div className="logos">🗑️ WastaBin</div>
+      <div className="logos">
+      <img src='./assests/log.png'height={35} width={30}/> 
+      WastaBin</div>
       <h2>Welcome Back</h2>
 
       <form onSubmit={handleSubmit}>
