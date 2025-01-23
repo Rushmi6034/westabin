@@ -285,7 +285,7 @@
   gap: 20px;
   /* background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(61, 160, 68, 0.8)); */
   padding: 20px;
-  background: linear-gradient(to bottom, #ffffff, rgba(61, 160, 68, 0.8)); 
+  background: linear-gradient(to bottom, #ffffff, #9670c7); 
 }
 /* .navv-container{
   background: rgba(0, 0, 0, 0.5);
@@ -323,7 +323,7 @@
   
    .vision h2, .mission h2 {
     font-size: 1.8rem;
-    color: green;
+    color: #391b49;
     margin-bottom: 15px;
     text-transform: uppercase;
   }
@@ -359,7 +359,7 @@
   
   .vision h2 {
     font-size: 1.8rem;
-    color: green;
+    color: #391b49;
     text-transform: uppercase;
     margin-bottom: 15px;
     text-align: center;
@@ -405,7 +405,7 @@
             height: 0;
             border-top: 6px solid transparent;
             border-bottom: 6px solid transparent;
-            border-left: 10px solid green;
+            border-left: 10px solid #391b49;
         }
 
   
@@ -424,7 +424,7 @@
   
   .vision h2 {
     font-size: 1.8rem;
-    color: green;
+    color: #391b49;
     text-transform: uppercase;
     margin-bottom: 15px;
   }
@@ -476,7 +476,7 @@
       display: flex;
     align-items: center;
     gap: 10px;
-    color: white;
+    color: #391b49;
     font-size: 1.5rem;
     font-weight: bold;
     }
@@ -489,13 +489,13 @@
   
   .navi-links a {
       text-decoration: none;
-      color: white;
+      color: #391b49;
       font-weight: 500;
       transition: color 0.3s, transform 0.3s;
   }
   
     .navi-links a:hover{
-      color:rgb(13, 222, 83);
+      color:#795690;
       font-weight: bold;
     }
   
