@@ -1,8 +1,6 @@
 // import React, { useEffect, useRef } from 'react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-// import FeatureCard from '../components/FeatureCard';
 import '../styles/Home.css';
 
 const Home = () => {

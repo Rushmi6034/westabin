@@ -433,157 +433,201 @@
 
 
 
+// import React from 'react';
+// import zeroLevelImage from '../assests/zero.png';
+// import lowLevelImage from '../assests/low1.png'; // Replace with the actual path to your image
+// import highLevelImage from '../assests/high1.png'; // Replace with the actual path to your image
+// import mediumLevelImage from '../assests/medium1.png'; // Optional: for intermediate levels
+
+// const DustbinCard = ({ name, level,  }) => {
+//   // Parse the level percentage
+//   const levelValue = parseInt(level.replace('%', ''), 10);
+
+//   // Determine the dustbin image based on the level
+//   let dustbinImage;
+//   if (levelValue == 0) {
+//     dustbinImage = zeroLevelImage;
+//   }
+//   else if (levelValue <= 20) {
+//     dustbinImage = lowLevelImage;
+//   } else if (levelValue <= 60) {
+//     dustbinImage = mediumLevelImage;
+//   } else {
+//     dustbinImage = highLevelImage; // Optional: Add an intermediate level image
+//   }
+
+//   const handleCardClick = () => {
+//     const htmlContent = `
+//       <html>
+//         <head>
+//           <title>Dustbin Data</title>
+//           <style>
+//             body {
+//               font-family: Arial, sans-serif;
+//               margin: 20px;
+//             }
+//               h1{
+//                 margin-top:25px;
+
+//               }
+//             table {
+//               margin-top: 120px;
+//               width: 100%;
+//               border-collapse: collapse;
+//               font-size: 16px;
+//               text-align: left;
+//             }
+//             th, td {
+//               padding: 10px;
+//               border: 1px solid #ccc;
+//             }
+//             th {
+//               background-color: #16a34a;
+//               color: white;
+//               text-align: center;
+//             }
+//             tr:nth-child(even) {
+//               background-color: #f9f9f9;
+//             }
+//             tr:hover {
+//               background-color: #f1f1f1;
+//             }
+//             h1 {
+//               text-align: center;
+//             }
+
+//             .back {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       /* background-color: #eeeeee4b; */
+//       border-radius: 3px;
+//       letter-spacing: 1px;
+//       transition: all 0.2s linear;
+//       cursor: pointer;
+//       border: none;
+// background: none;
+//       padding: 10px 14px;
+     
+//       position: fixed;
+//       top: 30px;
+//       left: 30px;
+//       z-index: 1000;
+//       font-weight: bold;
+//   }
+  
+//   .back > svg {
+//       /* margin-right: 5px; */
+//       font-size: 25px;
+//       transition: all 0.4s ease-in;
+//       color: black;
+//       font-weight: bold;
+//   }
+  
+//   .back:hover > svg {
+//       font-size: 1.2em;
+//       transform: translateX(-5px);
+//       font-weight: bold;
+//   }
+
+//             .dustbin-image {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover; /* Optional: Ensures the aspect ratio is maintained */
+// }
+//           </style>
+//         </head>
+//         <body>
+//        <button class="back" onclick="window.location.href='/dashboard'">
+//         <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+//           <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
+//         </svg>
+       
+//       </button>
+//           <h1>${name} Data</h1>
+//           <table>
+//             <thead>
+//               <tr>
+//                 <th>Name</th>
+//                 <th>Level</th>
+               
+//               </tr>
+//             </thead>
+//             <tbody>
+//               <tr>
+//                 <td>${name}</td>
+//                 <td>${level}</td>
+                
+//               </tr>
+//             </tbody>
+//           </table>
+//         </body>
+//       </html>
+//     `;
+
+//     const newTab = window.open();
+//     newTab.document.open();
+//     newTab.document.write(htmlContent);
+//     newTab.document.close();
+//   };
+
+//   return (
+//     <div className="dustbin-card" onClick={handleCardClick}>
+//       <img src={dustbinImage} alt="Dustbin"  className="dustbin-image" />
+//       <h3>{name}</h3>
+//       <p>Level: {level}</p>
+//       {/* <p>Location: {location}</p>
+//       <p>Load: {load}</p> */}
+      
+//     </div>
+//   );
+// };
+
+// export default DustbinCard;
+
+
+
+
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import zeroLevelImage from '../assests/zero.png';
-import lowLevelImage from '../assests/low1.png'; // Replace with the actual path to your image
-import highLevelImage from '../assests/high1.png'; // Replace with the actual path to your image
+import lowLevelImage from '../assests/low1.png';
+import highLevelImage from '../assests/high1.png';
 import mediumLevelImage from '../assests/medium1.png'; // Optional: for intermediate levels
 
-const DustbinCard = ({ name, level,  }) => {
+const DustbinCard = ({ name, level }) => {
+  const navigate = useNavigate();
+
   // Parse the level percentage
   const levelValue = parseInt(level.replace('%', ''), 10);
 
   // Determine the dustbin image based on the level
   let dustbinImage;
-  if (levelValue == 0) {
+  if (levelValue === 0) {
     dustbinImage = zeroLevelImage;
-  }
-  else if (levelValue <= 20) {
+  } else if (levelValue <= 20) {
     dustbinImage = lowLevelImage;
   } else if (levelValue <= 60) {
     dustbinImage = mediumLevelImage;
   } else {
-    dustbinImage = highLevelImage; // Optional: Add an intermediate level image
+    dustbinImage = highLevelImage;
   }
 
   const handleCardClick = () => {
-    const htmlContent = `
-      <html>
-        <head>
-          <title>Dustbin Data</title>
-          <style>
-            body {
-              font-family: Arial, sans-serif;
-              margin: 20px;
-            }
-              h1{
-                margin-top:25px;
-
-              }
-            table {
-              margin-top: 120px;
-              width: 100%;
-              border-collapse: collapse;
-              font-size: 16px;
-              text-align: left;
-            }
-            th, td {
-              padding: 10px;
-              border: 1px solid #ccc;
-            }
-            th {
-              background-color: #16a34a;
-              color: white;
-              text-align: center;
-            }
-            tr:nth-child(even) {
-              background-color: #f9f9f9;
-            }
-            tr:hover {
-              background-color: #f1f1f1;
-            }
-            h1 {
-              text-align: center;
-            }
-
-            .back {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      /* background-color: #eeeeee4b; */
-      border-radius: 3px;
-      letter-spacing: 1px;
-      transition: all 0.2s linear;
-      cursor: pointer;
-      border: none;
-background: none;
-      padding: 10px 14px;
-     
-      position: fixed;
-      top: 30px;
-      left: 30px;
-      z-index: 1000;
-      font-weight: bold;
-  }
-  
-  .back > svg {
-      /* margin-right: 5px; */
-      font-size: 25px;
-      transition: all 0.4s ease-in;
-      color: black;
-      font-weight: bold;
-  }
-  
-  .back:hover > svg {
-      font-size: 1.2em;
-      transform: translateX(-5px);
-      font-weight: bold;
-  }
-
-            .dustbin-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Optional: Ensures the aspect ratio is maintained */
-}
-          </style>
-        </head>
-        <body>
-       <button class="back" onclick="window.location.href='/dashboard'">
-        <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
-          <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
-        </svg>
-       
-      </button>
-          <h1>${name} Data</h1>
-          <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Level</th>
-               
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>${name}</td>
-                <td>${level}</td>
-                
-              </tr>
-            </tbody>
-          </table>
-        </body>
-      </html>
-    `;
-
-    const newTab = window.open();
-    newTab.document.open();
-    newTab.document.write(htmlContent);
-    newTab.document.close();
+    navigate('/dustbindata', { state: { name, level } });
   };
 
   return (
     <div className="dustbin-card" onClick={handleCardClick}>
-      <img src={dustbinImage} alt="Dustbin"  className="dustbin-image" />
+      <img src={dustbinImage} alt="Dustbin" className="dustbin-image" />
       <h3>{name}</h3>
       <p>Level: {level}</p>
-      {/* <p>Location: {location}</p>
-      <p>Load: {load}</p> */}
-      
     </div>
   );
 };
 
 export default DustbinCard;
+
 
 
 

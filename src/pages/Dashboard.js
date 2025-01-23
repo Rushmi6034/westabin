@@ -49,7 +49,7 @@ const Dashboard = () => {
           <div className="logs">🗑️ WastaBin</div>
           <div className="navs-links">
             <Link to="/" >Home</Link>
-            <Link to="/aboutus">About Us</Link>
+            <Link to="/aboutus-dashboard">About Us</Link>
             <Link to="#">Contact</Link>
             <div className="butto">
             <Link to="/login">Logout</Link>

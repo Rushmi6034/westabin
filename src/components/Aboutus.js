@@ -14,11 +14,11 @@ const About = () => {
                 🗑️ WastaBin
               </div>
               <div className="navi-links">
-                <Link to="/" className="active">Home</Link>
-                <Link to="/aboutus">About Us</Link>
+                <Link to="/dashboard" className="active">Home</Link>
+                <Link to="/aboutus-dashboard">About Us</Link>
                 <Link to="#">Contact</Link>
                 <div className="butto">
-                  <Link to="/login">Get Started</Link>
+                  <Link to="/login">Logout</Link>
                 </div>
               </div>
             </div>

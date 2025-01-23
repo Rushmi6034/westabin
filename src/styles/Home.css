@@ -55,6 +55,7 @@ nav {
 .nav-links a:hover {
     color: #16a34a;
     transform: scale(1.1);
+    font-weight: bold;
 }
 
 .hero {
@@ -73,6 +74,11 @@ nav {
     padding: 2rem;
     border-radius: 15px;
     backdrop-filter: blur(0px);
+}
+
+.hero-content h1{
+    color: white;
+    margin-top:auto;
 }
 
 
@@ -107,7 +113,7 @@ nav {
 
 h1 {
     font-size: 3rem;
-    color: #05671f;
+    color: white;
     margin-bottom: 1rem;
     /* margin-top: 20px; */
 }
